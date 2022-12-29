@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>多啦A橙</title>
+		<link rel = "stylesheet" href = "static/css/duo.css"/>
+		<style>
+			body{background-image: url(static/img/7.jpg); background-repeat: repeat-x}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="">首页喵</a>
+				</li>
+				<li>
+					<a href="">多啦A橙</a>
+				</li>
+				<li>
+					<a href="">生日礼物</a>
+					<ul id="gift">
+						<li>
+							<a href="">礼物①</a>
+						</li>
+						<li>
+							<a href="">礼物②</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">顶锅汪汪</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<div class="cry">
+			<video width="430" height="293" autoplay="autoplay" id="cry">
+				<source src="static/img/cry.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="smile">
+			<video width="430" height="293" id="smile">
+			      <source src="static/img/smile.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="wait">
+			<video width="430" height="293" id="wait">
+			      <source src="static/img/wait.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		
+		<div class = "logo" id="logo">
+			<h4>橙次元口袋</h4>
+			<img src="static/img/pocket.jpg" />
+			<div class = "dog" id="dog">
+				<img src="static/img/dog.jpg" />
+			</div>
+		</div>
+		
+		
+		<div class = "catch" id="catch">
+			<h3>重获次元口袋</h3>
+			<p>多啦A橙的口袋失而复得，作为万能的多啦A橙，它可以帮你找到任何你想找的东西，快来试试吧!</p>
+			<div class="inp">
+				<h4>输入你想要找到的东西：<h4>
+					<form method="post" action="/duo">
+						<input type="search" name="keyword" id="search"/>
+						<input type="submit" value=" " id="button2">
+						<img src="static/img/button1.jpg" id="button1"/>
+					</form>
+			</div>
+			<img src="static/img/cat.jpg" id="cat"/>
+
+		</div>
+
+
+		
+
+		
+		
+		<div class="footer">
+			<p>设计制作：汪汪&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首版日期：2022.12.25</p>
+		</div>
+		
+		
+		<div class="but">
+			<script>
+				window.onload=function non(){
+					document.getElementById("wait").style.cssText = "display:none;";
+					document.getElementById("smile").style.cssText = "display:none;";
+					document.getElementById("catch").style.cssText = "display:none;";
+					document.getElementById("cry").play();
+				}
+
+				var vid = document.getElementById("cry");
+				vid.onmouseover = function(){
+					document.getElementById("cry").play();
+				}
+
+				var butt = document.getElementById("logo");
+				butt.onclick = function(){
+					document.getElementById("smile").style.cssText = "display:block;";
+					document.getElementById("smile").play();
+					document.getElementById("cry").pause();
+					document.getElementById("logo").style.cssText = "display:none;";
+					document.getElementById("catch").style.cssText = "display:block;";
+				}
+
+				var button2 = document.getElementById("button2");
+				button2.onclick = function(){
+					document.getElementById("wait").style.cssText = "display:block;";
+					document.getElementById("smile").pause();
+				}
+
+
+			</script>
+		</div>
+		
+	</body>
+</html>
