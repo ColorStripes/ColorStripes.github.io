@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 16px;
+}
+li{
+	list-style: none;
+}
+.cry{
+	margin: 140px 90px;
+}
+.smile{
+	position: absolute;
+	margin: -437px 40px 30px 90px;
+}
+.wait{
+	position: absolute;
+	margin: -437px 0px 0px 90px;
+}
+
+
+.logo{
+	position: absolute;
+	cursor: pointer;
+	margin: -400px 30px 30px 900px;
+	color: #ff1ded;
+}
+.logo h4{
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin: 0px 20px 0px 20px;
+}
+.logo .dog{
+	margin: -250px 20px 10px -10px;
+}
+.logo .dog:hover{
+	margin: -250px 20px 10px 300px;
+}
+.logo h4:hover{
+	cursor: pointer;
+	color: #ff1ded;
+}
+.logo h4 .but{
+	position: absolute;
+	margin: -225px 0px 0px -900px;
+}
+
+
+
+.nav{
+	width: 100%;
+	border-top: 1px solid #4cff43;
+	border-bottom: 1px solid #4cff43;
+}
+.nav>ul{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+.nav>ul>li{
+	position: relative;
+	margin: 0 20px;
+}
+.nav ul li a{
+	font-size: 17px;
+	color: #333;
+	text-decoration: none;
+}
+.nav ul li a:hover{
+	color: #ff861d;
+}
+.nav ul li ul{
+	display: none;
+	position: absolute;
+	left: -5px;
+	background: #dee7f3;
+	padding: 10px;
+	width: 60px;
+}
+.nav ul li li{
+	margin: 5px 0;
+}
+.nav>ul>li:hover ul{
+	display: block;
+}
+
+.catch{
+	width: 900px;
+	margin: -550px 20px 100px 595px;
+}
+.catch h3{
+	display: flex;
+	align-items: center;
+	color: #0055ff;
+	font-size: 24px;
+}
+.catch h3::before{
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 30px;
+	margin-right: 10px;
+	background: #0055ff;
+}
+.catch p{
+	line-height: 1.8;
+	margin: 20px 0;
+	text-indent: 2em;
+}
+.catch .inp h4{
+	margin: 10px 30px 0px 60px;
+}
+#search{ 
+	margin:0px 0px 30px 0px;
+	/* margin: 10px 0px 60px 190px; */
+	width:200px;
+	height: 30px;
+}
+#button1{
+	cursor: pointer;
+	position: absolute;
+	margin:-6px 10px 30px 35px;
+}
+#button1:hover{
+    display: none;
+}
+#button2{
+	position: absolute;
+	margin:-2px 0px 20px 40px;
+	cursor: pointer;
+	background-image: url(../img/button2.jpg);
+	width: 70px;
+	height: 42px;
+	font-weight: bold;
+	border: 0px;
+	color: #ff0000;
+}
+#button2:hover{
+	cursor: pointer;
+	/* display: none; */
+}
+#cat{
+	position: absolute;
+	margin:-50px 10px 60px 600px;
+}
+
+
+.footer{
+	position: absolute;
+	background: #333333;
+	width: 100%;
+	color: #F2F2F2;
+	padding: 10px 0;
+	text-align: center;
+	bottom: 0;
+}

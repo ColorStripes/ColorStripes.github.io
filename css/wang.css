@@ -1,0 +1,237 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 16px;
+}
+li{
+	list-style: none;
+}
+.nav{
+	width: 100%;
+	border-top: 1px solid #4cff43;
+	border-bottom: 1px solid #4cff43;
+}
+.nav>ul{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+.nav>ul>li{
+	position: relative;
+	margin: 0 20px;
+}
+.nav ul li a{
+	font-size: 17px;
+	color: #333;
+	text-decoration: none;
+}
+.nav ul li a:hover{
+	color: #ff861d;
+}
+.nav ul li ul{
+	display: none;
+	position: absolute;
+	left: -5px;
+	background: #dee7f3;
+	padding: 10px;
+	width: 60px;
+}
+.nav ul li li{
+	margin: 5px 0;
+}
+.nav>ul>li:hover ul{
+	display: block;
+}
+
+
+
+.about{
+	width: 920px;
+	margin: 10px 0px 0px 300px;
+}
+.about h3{
+	display: flex;
+	align-items: center;
+	color: #0055ff;
+	font-size: 24px;
+}
+.about h3::before{
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 30px;
+	margin-right: 10px;
+	background: #0055ff;
+}
+.about p{
+	line-height: 1.8;
+	margin: 10px 0;
+	text-indent: 2em;
+}
+
+
+.logo{
+	text-align: center;
+	margin: 100px 30px 60px 40px;
+
+}
+.logo>img{
+	margin-right: 0px;
+}
+.logo #dog2{
+	margin-left: 1000px;
+}
+
+
+.dog{
+	position: absolute;
+	margin: -490px 0px 0px 340px;
+}
+.dog #happy{
+	position: absolute;
+}
+.dog #jy{
+	position: absolute;
+	margin: 176px 0px 0px 10px;
+}
+.dog #ym{
+
+	position: absolute;
+	margin: 89px 0px 0px 0px;
+}
+.dog #food{
+	position: absolute;
+	margin: 340px 0px 0px 310px;
+}
+.dog #moreg{
+	position: absolute;
+	margin: 230px 0px 0px 310px;
+	color: #ff007f;
+	font-size: 20px;
+}
+.dog #moref{
+	position: absolute;
+	margin: 230px 0px 0px 310px;
+	color: #ff007f;
+	font-size: 20px;
+}
+
+
+
+.go{
+	position: absolute;
+	margin: -390px 0px 0px 450px;
+	z-index: 7;
+}
+
+.butt{
+	position: absolute;
+	margin: -400px 0px 0px 1050px;
+}
+.butt #jg{
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.butt #jjg{
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.butt #jf{
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.butt #jjf{
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.butt #banna{
+	cursor: pointer;
+}
+
+.pot{
+	position: absolute;
+	margin: -180px 0px 0px 530px;
+}
+.pot #pot1{
+	position: absolute;
+	margin-top: -170px;
+}
+.pot #pot2{
+	position: absolute;
+	margin-top: -170px;
+	margin-left: -40px;
+	margin-bottom: 30px;
+}
+.pot #pot3{
+	position: absolute;
+	margin-top: -223px;
+	margin-left: -25px;
+	z-index: 1;
+}
+.pot #pot4{
+	position: absolute;
+	margin-top: -243px;
+}
+.pot #pot5{
+	position: absolute;
+	margin-top: -283px;
+	margin-left: -30px;
+}
+
+.leg{
+	position: absolute;
+	margin: -170px 0px 0px 677px;
+}
+.leg #leg1{
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+}
+.leg #leg2{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 20px;
+	z-index: 3;
+}
+.leg #leg3{
+	margin-top: -15px;
+	position: absolute;
+	z-index: 4;
+}
+.leg #leg4{
+	margin-top: -25px;
+	margin-left: 20px;
+	position: absolute;
+	z-index: 5;
+}
+.leg #leg5{
+	margin-top: -55px;
+	position: absolute;
+	z-index: 6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+	position: absolute;
+	background: #333333;
+	width: 100%;
+	color: #F2F2F2;
+	padding: 10px 0;
+	text-align: center;
+	bottom: 0;
+}
