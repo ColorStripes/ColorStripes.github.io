@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>顶锅汪汪</title>
+		<link rel = "stylesheet" href = "static/css/wang.css"/>
+		<style>
+			body{background-image: url(static/img/7.jpg); background-repeat: repeat-x}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="">首页喵</a>
+				</li>
+				<li>
+					<a href="">多啦A橙</a>
+				</li>
+				<li>
+					<a href="">生日礼物</a>
+					<ul id="gift">
+						<li>
+							<a href="">礼物①</a>
+						</li>
+						<li>
+							<a href="">礼物②</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">顶锅汪汪</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<div class="about">
+			<h3>甩锅汪汪</h3>
+			<p>啊哈，这只汪汪看起来很乖，你是否想要给它加个鸡腿呢？还是丢给它锅锅（香蕉皮）？不管如何对待它，它永远都会在陪伴橙子身边嘿嘿。点击旁边按钮施展你的巴拉拉魔法吧，注意汪汪所能承受的锅锅重量和鸡腿个数都是有限制的哦，请不要过分虐待（投喂），啊咧！</p>
+		</div>
+		
+		<div class="logo">
+			<img src="static/img/dog1.jpg" id="dog1" width="200" />
+			<img src="static/img/dog2.jpg" id="dog2" width="200" />
+		</div>
+		
+		<div class="go">
+			<video width="430" height="293" id="go">
+				<source src="static/img/go.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+		
+		<div class="dog">
+			<div><img src="static/img/happy.png" id="happy"/></div>
+			<div><img src="static/img/jy.png" id="jy"/></div>
+			<div><img src="static/img/ym.png" id="ym"/></div>
+			<div><img src="static/img/food.png" id="food"/></div>
+			<p id="moreg">锅锅太多了,汪汪要撑不住了。</p>
+			<p id="moref">没有鸡腿啦！汪汪不开心</p>
+		</div>
+	
+	
+		<div class="butt">
+			<div><img src="static/img/button5.png" width="80" height="49" id="jg"/></div>
+			<div><img src="static/img/button6.png" width="80" height="49" id="jjg"/></div>
+			<div><img src="static/img/button7.png" width="80" height="49" id="jf"/></div>
+			<div><img src="static/img/button8.png" width="80" height="49" id="jjf"/></div>
+			<div><img src="static/img/button9.png" width="80" height="49" id="banna"/></div>
+		</div>
+		
+		<div class="pot">
+			<div><img src="static/img/pot1.png" id="pot1"/></div>
+			<div><img src="static/img/pot2.png" id="pot2"/></div>
+			<div><img src="static/img/pot3.png" id="pot3"/></div>
+			<div><img src="static/img/pot4.png" id="pot4"/></div>
+			<div><img src="static/img/pot5.png" id="pot5"/></div>
+		</div>
+		
+		<div class="leg">
+			<div><img src="static/img/leg1.png" id="leg5"/></div>
+			<div><img src="static/img/leg2.png" id="leg4"/></div>
+			<div><img src="static/img/leg1.png" id="leg3"/></div>
+			<div><img src="static/img/leg2.png" id="leg2"/></div>
+			<div><img src="static/img/leg1.png" id="leg1"/></div>
+		</div>
+
+		<div id ="show">
+			<h3 id="test"></h3>
+		</div>
+
+		<div class="footer">
+			<p>设计制作：汪汪&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首版日期：2022.12.25</p>
+		</div>
+		
+
+		<script>
+			window.onload=function non(){
+				document.getElementById("moreg").style.cssText = "display:none;";
+				document.getElementById("moref").style.cssText = "display:none;";
+				document.getElementById("go").style.cssText = "display:none;";
+				document.getElementById("ym").style.cssText = "display:none;";
+				document.getElementById("jy").style.cssText = "display:none;";
+				document.getElementById("test").style.cssText = "display:none;";
+				document.getElementById("pot1").style.cssText = "display:none;";
+				document.getElementById("pot2").style.cssText = "display:none;";
+				document.getElementById("pot3").style.cssText = "display:none;";
+				document.getElementById("pot4").style.cssText = "display:none;";
+				document.getElementById("pot5").style.cssText = "display:none;";
+				document.getElementById("leg1").style.cssText = "display:none;";
+				document.getElementById("leg2").style.cssText = "display:none;";
+				document.getElementById("leg3").style.cssText = "display:none;";
+				document.getElementById("leg4").style.cssText = "display:none;";
+				document.getElementById("leg5").style.cssText = "display:none;";
+			}
+			
+			var cnt_g = 0;
+			var button1 = document.getElementById("jg");
+			button1.onclick = function(){
+				document.getElementById("jy").style.cssText = "display:block;";
+				document.getElementById("happy").style.cssText = "display:none;";
+				document.getElementById("ym").style.cssText = "display:none;";
+				document.getElementById("moref").style.cssText = "display:none;";
+				document.getElementById("moreg").style.cssText = "display:none;";
+				cnt_g++;
+				if(cnt_g == 1){
+					document.getElementById("pot1").style.cssText = "display:block;";
+				}
+				else if(cnt_g == 2){
+					document.getElementById("pot2").style.cssText = "display:block;";
+				}
+				else if(cnt_g == 3){
+					document.getElementById("pot3").style.cssText = "display:block;";
+				}
+				else if(cnt_g == 4){
+					document.getElementById("pot4").style.cssText = "display:block;";
+				}
+				else if(cnt_g == 5){
+					document.getElementById("pot5").style.cssText = "display:block;";
+				}
+				else{
+					cnt_g--;
+					document.getElementById("jy").style.cssText = "display:none;";
+					document.getElementById("happy").style.cssText = "display:none;";
+					document.getElementById("ym").style.cssText = "display:block;";
+					document.getElementById("moreg").style.cssText = "display:block;";
+				}
+				
+			}
+			
+			var button2 = document.getElementById("jjg");
+			button2.onclick = function(){
+				if(cnt_g != 0){
+					document.getElementById("happy").style.cssText = "display:block;";
+					document.getElementById("jy").style.cssText = "display:none;";
+					document.getElementById("ym").style.cssText = "display:none;";
+					document.getElementById("moref").style.cssText = "display:none;";
+					document.getElementById("moreg").style.cssText = "display:none;";
+				}
+				if(cnt_g == 1){
+					document.getElementById("pot1").style.cssText = "display:none;";
+				}
+				else if(cnt_g == 2){
+					document.getElementById("pot2").style.cssText = "display:none;";
+				}
+				else if(cnt_g == 3){
+					document.getElementById("pot3").style.cssText = "display:none;";
+				}
+				else if(cnt_g == 4){
+					document.getElementById("pot4").style.cssText = "display:none;";
+				}
+				else if(cnt_g == 5){
+					document.getElementById("pot5").style.cssText = "display:none;";
+				}
+				else if(cnt_g <= 0){
+					cnt_g++;
+				}
+				cnt_g--;
+				
+			}
+			
+			
+			
+			var cnt_f = 0;
+			var button3 = document.getElementById("jf");
+			button3.onclick = function(){
+				document.getElementById("happy").style.cssText = "display:block;";
+				document.getElementById("jy").style.cssText = "display:none;";
+				document.getElementById("ym").style.cssText = "display:none;";
+				document.getElementById("moref").style.cssText = "display:none;";
+				document.getElementById("moreg").style.cssText = "display:none;";
+				cnt_f++;
+				if(cnt_f == 1){
+					document.getElementById("leg1").style.cssText = "display:block;";
+				}
+				else if(cnt_f == 2){
+					document.getElementById("leg2").style.cssText = "display:block;";
+				}
+				else if(cnt_f == 3){
+					document.getElementById("leg3").style.cssText = "display:block;";
+				}
+				else if(cnt_f == 4){
+					document.getElementById("leg4").style.cssText = "display:block;";
+				}
+				else if(cnt_f == 5){
+					document.getElementById("leg5").style.cssText = "display:block;";
+				}
+				else{
+					cnt_f--;
+					document.getElementById("jy").style.cssText = "display:none;";
+					document.getElementById("happy").style.cssText = "display:none;";
+					document.getElementById("ym").style.cssText = "display:block;";
+					document.getElementById("moref").style.cssText = "display:block;";
+				}
+				
+			}
+			
+			var button4 = document.getElementById("jjf");
+			button4.onclick = function(){
+				if(cnt_f != 0){
+					document.getElementById("jy").style.cssText = "display:block;";
+					document.getElementById("happy").style.cssText = "display:none;";
+					document.getElementById("ym").style.cssText = "display:none;";
+					document.getElementById("moref").style.cssText = "display:none;";
+					document.getElementById("moreg").style.cssText = "display:none;";
+				}
+				if(cnt_f == 1){
+					document.getElementById("leg1").style.cssText = "display:none;";
+				}
+				else if(cnt_f == 2){
+					document.getElementById("leg2").style.cssText = "display:none;";
+				}
+				else if(cnt_f == 3){
+					document.getElementById("leg3").style.cssText = "display:none;";
+				}
+				else if(cnt_f == 4){
+					document.getElementById("leg4").style.cssText = "display:none;";
+				}
+				else if(cnt_f == 5){
+					document.getElementById("leg5").style.cssText = "display:none;";
+				}
+				else if(cnt_f <= 0){
+					cnt_f++;
+				}
+				cnt_f--;
+			}
+			
+			
+			
+			var button5 = document.getElementById("banna");
+			button5.onclick = function(){
+				document.getElementById("go").style.cssText = "display:block;";
+				document.getElementById("go").play();
+				document.getElementById("go").onended = function(){
+					document.getElementById("go").style.cssText = "display:none;";
+				}
+			}
+
+			
+		</script>
+				 
+		
+	</body>
+</html>

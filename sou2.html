@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>多啦A橙</title>
+		<link rel = "stylesheet" href = "static/css/sou2.css"/>
+		<style>
+			body{background-image: url(static/img/7.jpg); background-repeat: repeat-x}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="">首页喵</a>
+				</li>
+				<li>
+					<a href="">多啦A橙</a>
+				</li>
+				<li>
+					<a href="">生日礼物</a>
+					<ul id="gift">
+						<li>
+							<a href="">礼物①</a>
+						</li>
+						<li>
+							<a href="">礼物②</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">顶锅汪汪</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<div class="sear">
+			<video width="430" height="293" autoplay="autoplay" id="sear">
+				<source src="static/img/searc.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+		<div class="wait">
+			<video width="430" height="293" id="wait">
+			      <source src="static/img/wait.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		
+		<div class = "catch" id="catch">
+			<h3>重获次元口袋</h3>
+			<p>多啦A橙的口袋失而复得，作为万能的多啦A橙，它可以帮你找到任何你想找的东西，快来试试吧!</p>
+			<div class="inp">
+				<h4>输入你想要找到的东西：<h4>
+					 <form method="post" action="/picture2">
+						<input type="search" name="keyword" placeholder="黄色确认 蓝色换图" id="search"/>
+						<input type="submit" value=" " id="button2">
+						<img src="static/img/button1.jpg" id="button1"/>
+					 </form>
+			</div>
+			<img src="static/img/cat.jpg" id="cat"/>
+		</div>
+		
+		
+		
+		<div class="change" id="change">
+			<img src="static/img/button4.jpg" id="button4"/>
+			<img src="static/img/button3.jpg" id="button3"/>
+		</div>
+		
+		
+		<div class="show" id="show">
+			<div class="showpic1">
+				<script>
+					var re = "";
+					var tu = 1;
+					var chan = 1;
+					for (var i = 0; i < 2; i++) {
+						re += 	'<div>' +
+								'<img src="static/display/{{word}}'+ tu +'.jpg" width="200" height="150" id='+ tu +'>' +
+								'</div>';
+						tu+=2;
+						
+					}
+					document.writeln(re);
+				</script>
+			</div>
+			<div class="showpic2">
+				<script>
+					var re = "";
+					tu = 2;
+					for (var i = 0; i < 2; i++) {
+						re += 	'<div>' +
+								'<img src="static/display/{{word}}'+ tu +'.jpg" width="200" height="150" id='+ tu +'>' +
+								'</div>';
+						tu+=2;
+					}
+					document.writeln(re);
+					tu = 1;
+					chan = 4;
+				</script>
+			</div>
+		</div>
+		
+		<div class="getdata" id="getdata">
+			<h3>“{{word}}”</h3>
+		</div>
+		
+		
+		<div class="footer">
+			<p>设计制作：汪汪&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首版日期：2022.12.25</p>
+		</div>
+		
+		
+		<!-- <div class="but">
+			<!-- <img src="" alt="" id="im"/> -->
+			<script>
+				
+				
+				var num = {{num}};
+
+				var ind1 = 0,ind2 = 0,ind3 = 0,ind4 = 0;
+				var now1 = [1];
+				var now2 = [2];
+				var now3 = [3];
+				var now4 = [4];
+				
+				var butt = document.getElementById("button4");
+				butt.onclick = function(){
+					if(num > chan){
+						var butt = document.getElementById(tu);
+						chan++;
+						butt.src = 'static/display/{{word}}' + chan + '.jpg';
+						tu++;
+						if(tu == 5){
+							tu = 1;
+						}
+
+						if(((chan-1) % 4) == 0){
+							ind1++;
+							now1[ind1] = chan;
+						}
+						if(((chan-2) % 4) == 0){
+							ind2++;
+							now2[ind2] = chan;
+						}
+						if(((chan-3) % 4) == 0){
+							ind3++;
+							now3[ind3] = chan;
+						}
+						if(((chan-4) % 4) == 0){
+							ind4++;
+							now4[ind4] = chan;
+						}
+					}
+				}
+				
+				
+				var pic1 = document.getElementById("1");
+				pic1.ondblclick = function(){
+					if(ind1 != 0){
+						pic1.src = 'static/display/{{word}}' + now1[ind1 - 1] + '.jpg';
+						ind1--;
+					}
+				}
+				var pic2 = document.getElementById("2");
+				pic2.ondblclick = function(){
+					if(ind2 != 0){
+						pic2.src = 'static/display/{{word}}' + now2[ind2 - 1] + '.jpg';
+						ind2--;
+					}
+				}
+				var pic3 = document.getElementById("3");
+				pic3.ondblclick = function(){
+					if(ind3 != 0){
+						pic3.src = 'static/display/{{word}}' + now3[ind3 - 1] + '.jpg';
+						ind3--;
+					}
+				}
+				var pic4 = document.getElementById("4");
+				pic4.ondblclick = function(){
+					if(ind4 != 0){
+						pic4.src = 'static/display/{{word}}' + now4[ind4 - 1] + '.jpg';
+						ind4--;
+					}
+				}
+					
+			</script>
+			
+						
+			<script>
+				window.onload=function non(){
+					document.getElementById("wait").style.cssText = "display:none;";
+					
+				}			
+			</script>
+			
+			<script>
+				var button2 = document.getElementById("button2");
+				button2.onclick = function(){
+					document.getElementById("wait").style.cssText = "display:block;";
+					document.getElementById("getdata").style.cssText = "display:none;";
+					document.getElementById("sear").pause();
+				}
+			</script>
+			
+			
+		</div> 
+		
+	</body>
+</html>
