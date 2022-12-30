@@ -97,11 +97,12 @@ li{
 	position: absolute;
 }
 .dog #jy{
+	display: none;
 	position: absolute;
 	margin: 176px 0px 0px 10px;
 }
 .dog #ym{
-
+	display: none;
 	position: absolute;
 	margin: 89px 0px 0px 0px;
 }
@@ -110,12 +111,14 @@ li{
 	margin: 340px 0px 0px 310px;
 }
 .dog #moreg{
+	display: none;
 	position: absolute;
 	margin: 230px 0px 0px 310px;
 	color: #ff007f;
 	font-size: 20px;
 }
 .dog #moref{
+	display: none;
 	position: absolute;
 	margin: 230px 0px 0px 310px;
 	color: #ff007f;
@@ -124,7 +127,8 @@ li{
 
 
 
-.go{
+#go{
+	display: none;
 	position: absolute;
 	margin: -390px 0px 0px 450px;
 	z-index: 7;
@@ -159,26 +163,32 @@ li{
 	margin: -180px 0px 0px 530px;
 }
 .pot #pot1{
+	display: none;
 	position: absolute;
 	margin-top: -170px;
 }
 .pot #pot2{
+	display: none;
+	display: none;
 	position: absolute;
 	margin-top: -170px;
 	margin-left: -40px;
 	margin-bottom: 30px;
 }
 .pot #pot3{
+	display: none;
 	position: absolute;
 	margin-top: -223px;
 	margin-left: -25px;
 	z-index: 1;
 }
 .pot #pot4{
+	display: none;
 	position: absolute;
 	margin-top: -243px;
 }
 .pot #pot5{
+	display: none;
 	position: absolute;
 	margin-top: -283px;
 	margin-left: -30px;
@@ -189,28 +199,33 @@ li{
 	margin: -170px 0px 0px 677px;
 }
 .leg #leg1{
+	display: none;
 	position: absolute;
 	margin-top: 25px;
 	z-index: 2;
 }
 .leg #leg2{
+	display: none;
 	position: absolute;
 	margin-top: 15px;
 	margin-left: 20px;
 	z-index: 3;
 }
 .leg #leg3{
+	display: none;
 	margin-top: -15px;
 	position: absolute;
 	z-index: 4;
 }
 .leg #leg4{
+	display: none;
 	margin-top: -25px;
 	margin-left: 20px;
 	position: absolute;
 	z-index: 5;
 }
 .leg #leg5{
+	display: none;
 	margin-top: -55px;
 	position: absolute;
 	z-index: 6;
