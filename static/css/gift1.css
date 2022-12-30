@@ -20,7 +20,7 @@ li{
 }
 .nav>ul>li{
 	position: relative;
-	margin: 0 20px;
+	margin: 0 50px;
 }
 .nav ul li a{
 	font-size: 17px;
@@ -38,7 +38,7 @@ li{
 	display: none;
 	position: absolute;
 	left: -5px;
-	background: #a6c3f8;
+	background: #9c7e64;
 	padding: 10px;
 	width: 60px;
 }
@@ -49,18 +49,82 @@ li{
 	display: block;
 }
 
+/* margin: 70px 30px 0px 550px; */
+
+.lz{
+	position: absolute;
+}
+.lz #lz{
+	cursor: pointer;
+	margin: 70px 30px 0px 550px;
+	width: 80px;
+}
+.lz #lz:hover{
+	margin: 50px 30px 0px 520px;
+	width: 160px;
+}
+.lz #lz2{
+	display: none;
+	width: 500px;
+	margin: 60px 150px;
+}
 
 
+.about1{
+	position: absolute;
+	width: 920px;
+	margin: 500px 160px;
+}
+.about1 h3{
+	display: flex;
+	align-items: center;
+	color: #ff0000;
+	font-size: 24px;
+}
+.about1 h3::before{
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 30px;
+	margin-right: 10px;
+	background: #0055ff;
+}
+.about1 p{
+	line-height: 2;
+	margin: 20px 0;
+	text-indent: 2em;
+	font-size: 20px;
+	color: #54e3ff;
+}
 
 
-
-
-
-
-
-
-
-
+.about2{
+	display: none;
+	position: absolute;
+	width: 540px;
+	margin: 200px 750px;
+}
+.about2 h3{
+	display: flex;
+	align-items: center;
+	color: #f3f300;
+	font-size: 24px;
+}
+.about2 h3::before{
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 30px;
+	margin-right: 10px;
+	background: #ff55ff;
+}
+.about2 p{
+	line-height: 2;
+	margin: 20px 0;
+	text-indent: 2em;
+	font-size: 20px;
+	color: #aaffff;
+}
 
 
 
