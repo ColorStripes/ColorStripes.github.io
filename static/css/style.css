@@ -44,14 +44,17 @@ li{
 	font-size: 17px;
 	color: #333;
 	text-decoration: none;
+	color: #000000;
 }
 .nav ul li a:hover{
 	color: #ff861d;
 }
+.nav ul li a:active{
+	color: #ff0000;
+}
 .nav ul li ul{
 	display: none;
 	position: absolute;
-/* 	top: 30px; */
 	left: -5px;
 	background: #dee7f3;
 	padding: 10px;
@@ -61,7 +64,7 @@ li{
 	margin: 5px 0;
 }
 .nav>ul>li:hover ul{
-	display: block;//////
+	display: block;
 }
 .banner{
 	width: 920px;

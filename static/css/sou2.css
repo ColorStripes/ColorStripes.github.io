@@ -47,8 +47,13 @@ li{
 	font-size: 17px;
 	color: #333;
 	text-decoration: none;
+	color: #00ff7f;
 }
 .nav ul li a:hover{
+	color: #ff007f;
+}
+.nav ul li a:active{
+	
 	color: #ff861d;
 }
 .nav ul li ul{

@@ -67,8 +67,12 @@ li{
 	font-size: 17px;
 	color: #333;
 	text-decoration: none;
+	color: #ffff00;
 }
 .nav ul li a:hover{
+	color: #ff0000;
+}
+.nav ul li a:active{
 	color: #ff861d;
 }
 .nav ul li ul{
