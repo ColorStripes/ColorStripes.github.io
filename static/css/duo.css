@@ -11,11 +11,13 @@ li{
 .cry{
 	margin: 140px 90px;
 }
-.smile{
+#smile{
+	display:none;
 	position: absolute;
 	margin: -437px 40px 30px 90px;
 }
-.wait{
+#wait{
+	display:none;
 	position: absolute;
 	margin: -437px 0px 0px 90px;
 }
@@ -90,6 +92,10 @@ li{
 	display: block;
 }
 
+
+#catch{
+	display: none;
+}
 .catch{
 	width: 900px;
 	margin: -550px 20px 100px 595px;
