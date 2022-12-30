@@ -63,15 +63,14 @@ li{
 	position: absolute;
 	right: 0;
 }
-.musp{
-	cursor: pointer;
-}
 .musp #pause{
+	cursor: pointer;
 	display: none;
 	position: absolute;
 	margin: -140px 0px;
 }
 .musp #play{
+	cursor: pointer;
 	position: absolute;
 	margin: -140px 0px;
 }

@@ -48,7 +48,7 @@ li{
 .nav>ul>li:hover ul{
 	display: block;
 }
-.musp{
+.music{
 	cursor: pointer;
 }
 .music{
@@ -56,11 +56,13 @@ li{
 	right: 0;
 }
 .musp #pause{
+	cursor: pointer;
 	display: none;
 	position: absolute;
 	right: 0;
 }
 .musp #play{
+	cursor: pointer;
 	position: absolute;
 	right: 0;
 }
