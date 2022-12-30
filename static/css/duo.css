@@ -124,33 +124,30 @@ li{
 }
 #search{ 
 	margin:0px 0px 30px 0px;
-	/* margin: 10px 0px 60px 190px; */
 	width:200px;
 	height: 30px;
 }
 #button1{
-	cursor: pointer;
-	position: absolute;
-	margin:-6px 10px 30px 35px;
-}
-#button1:hover{
-    display: none;
-}
-#button2{
 	position: absolute;
 	margin:-2px 0px 20px 40px;
 	cursor: pointer;
-	background-image: url(../img/button2.jpg);
-	width: 70px;
-	height: 42px;
+	background-image: url(../img/button1.jpg);
+	width: 80px;
+	height: 49px;
 	font-weight: bold;
 	border: 0px;
 	color: #ff0000;
 }
-#button2:hover{
+#button1:hover{
 	cursor: pointer;
-	/* display: none; */
 }
+#button1:active{
+	background-image: url(../img/button2.jpg);
+	width: 70px;
+	height: 42px;
+	margin:3px 43px;
+}
+
 #cat{
 	position: absolute;
 	margin:-50px 10px 60px 600px;
