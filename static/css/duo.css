@@ -129,9 +129,9 @@ li{
 }
 #button1{
 	position: absolute;
-	margin:-2px 0px 20px 40px;
+	margin:-6px 0px 20px 33px;
 	cursor: pointer;
-	background-image: url(../img/button1.jpg);
+	background-image: url(/static/img/button1.jpg);
 	width: 80px;
 	height: 49px;
 	font-weight: bold;
@@ -142,10 +142,10 @@ li{
 	cursor: pointer;
 }
 #button1:active{
-	background-image: url(../img/button2.jpg);
+	background-image: url(/static/img/button2.jpg);
 	width: 70px;
 	height: 42px;
-	margin:3px 43px;
+	margin:-3px 38px;
 }
 
 #cat{

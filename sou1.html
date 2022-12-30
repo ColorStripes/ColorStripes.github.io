@@ -52,27 +52,23 @@
 			      <source src="https://colorstripes.github.io/static/img/wait.mp4" type="video/mp4">
 			</video>
 		</div>
-
+		
 		
 		<div class = "catch" id="catch">
 			<h3>重获次元口袋</h3>
 			<p>多啦A橙的口袋失而复得，作为万能的多啦A橙，它可以帮你找到任何你想找的东西，快来试试吧!</p>
 			<div class="inp">
 				<h4>输入你想要找到的东西：<h4>
-					 <form method="post" action="http://127.0.0.1:8080/picture1">
-						<input type="search" name="keyword" placeholder="黄色确认 蓝色换图" id="search"/>
-						<input type="submit" value=" " id="button2">
-						<img src="https://colorstripes.github.io/static/img/button1.jpg" id="button1"/>
-					 </form>
+				<form method="post" action="http://127.0.0.1:8080/picture1">
+					<input type="search" name="keyword" placeholder="黄色确认 蓝色换图" id="search"/>
+					<input type="submit" value=" " id="button1">
+				</form>
 			</div>
 			<img src="https://colorstripes.github.io/static/img/cat.jpg" id="cat"/>
 		</div>
 		
-		
-		
 		<div class="change" id="change">
-			<img src="https://colorstripes.github.io/static/img/button4.jpg" id="button4"/>
-			<img src="https://colorstripes.github.io/static/img/button3.jpg" id="button3"/>
+			<img src="https://colorstripes.github.io/static/img/button3.jpg" id="button2"/>
 		</div>
 		
 		
@@ -110,16 +106,12 @@
 		</div>
 		
 		
-		
-		
-		
+
 		<div class="footer">
 			<p>设计制作：汪汪&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首版日期：2022.12.25</p>
 		</div>
 		
 		
-		<!-- <div class="but">
-			<!-- <img src="" alt="" id="im"/> -->
 			<script>
 				
 				
@@ -131,8 +123,8 @@
 				var now3 = [3];
 				var now4 = [4];
 				
-				var butt = document.getElementById("button4");
-				butt.onclick = function(){
+				var button2 = document.getElementById("button2");
+				button2.onclick = function(){
 					if(num > chan){
 						var butt = document.getElementById(tu);
 						chan++;
@@ -193,23 +185,16 @@
 					
 			</script>
 			
-						
-			<script>
-				window.onload=function non(){
-					document.getElementById("wait").style.cssText = "display:none;";
-				}			
-			</script>
+			
 			
 			<script>
-				var button2 = document.getElementById("button2");
-				button2.onclick = function(){
+				var button1 = document.getElementById("button1");
+				button1.onclick = function(){
 					document.getElementById("wait").style.cssText = "display:block;";
 					document.getElementById("sear").pause();
 				}
 			</script>
 			
-			
-		</div> 
 		
 	</body>
 </html>
