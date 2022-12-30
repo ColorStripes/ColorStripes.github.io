@@ -11,6 +11,7 @@
 	</head>
 
 	<body>
+		
 		<div class="nav">
 			<ul>
 				<li>
@@ -34,7 +35,46 @@
 					<a href="https://colorstripes.github.io/wang.html">顶锅汪汪</a>
 				</li>
 			</ul>
+			
+			
 		</div>
+		
+		<div class="music">
+			<audio id="music1" autoplay="autoplay" loop="loop">
+				<source src="static/img/music1.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		
+		<div class="musp">
+			<img src="static/img/pause.png" width="100" id="pause"/>
+			<img src="static/img/play.png" width="100" id="play"/>
+		<div/>
+		
+		<script>
+			var music = document.getElementById("music1");
+			music.onpause = function(){
+				document.getElementById("pause").style.cssText = "display:block;";
+				document.getElementById("play").style.cssText = "display:none;";
+			}
+			
+			var play = document.getElementById("play");
+			play.onclick = function(){
+				document.getElementById("pause").style.cssText = "display:block;";
+				document.getElementById("play").style.cssText = "display:none;";
+				document.getElementById("music1").pause();
+			}
+			
+			var pause = document.getElementById("pause");
+			pause.onclick = function(){
+				document.getElementById("play").style.cssText = "display:block;";
+				document.getElementById("pause").style.cssText = "display:none;";
+				document.getElementById("music1").play();
+			}
+		</script>
+		
+		
+		
+		
 		
 		<div class="lz">
 			<img src="static/img/lz.png" id="lz"/>
@@ -48,7 +88,7 @@
 		
 		<div class="about2" id="about2">
 			<h3>获得神秘道具&nbsp&nbsp———&nbsp&nbsp绿色钻石</h3>
-			<p>希望你可以喜欢这个道具，相信你已经猜到它的用途了。在音乐的世界里有旷日持久的钟爱，有意外之喜的邂逅，它可以帮助你在这个世界里畅通无阻，你的歌单里应该存在更多好听的音乐，你的喜爱赋予音乐新的意义，是你让大家的情绪找到了归处，美好的拾光留影将会伴你同行。</p>
+			<p>希望你可以喜欢这个道具，相信你已经猜到它的用途了。在音乐的世界里有旷日持久的钟爱，有意外之喜的邂逅，绿色钻石可以帮助你在这个世界里畅通无阻，你的歌单里应该存在更多好听的音乐，你的喜爱赋予音乐新的意义，是你让大家的情绪找到了归处，美好的拾光留影将会伴你同行。</p>
 		</div>
 		
 		
@@ -56,7 +96,6 @@
 		<div class="footer">
 			<p>设计制作：汪汪&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首版日期：2022.12.25</p>
 		</div>
-		
 		
 		<script>
 			var lz = document.getElementById("lz");

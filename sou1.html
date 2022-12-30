@@ -42,6 +42,40 @@
 		</div>
 		
 		
+		<div class="music">
+			<audio id="music1" autoplay="autoplay" loop="loop">
+				<source src="https://colorstripes.github.io/static/img/music1.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		
+		<div class="musp">
+			<img src="https://colorstripes.github.io/static/img/pause.png" width="100" id="pause"/>
+			<img src="https://colorstripes.github.io/static/img/play.png" width="100" id="play"/>
+		<div/>
+		
+		<script>
+			var music = document.getElementById("music1");
+			music.onpause = function(){
+				document.getElementById("pause").style.cssText = "display:block;";
+				document.getElementById("play").style.cssText = "display:none;";
+			}
+			
+			var play = document.getElementById("play");
+			play.onclick = function(){
+				document.getElementById("pause").style.cssText = "display:block;";
+				document.getElementById("play").style.cssText = "display:none;";
+				document.getElementById("music1").pause();
+			}
+			
+			var pause = document.getElementById("pause");
+			pause.onclick = function(){
+				document.getElementById("play").style.cssText = "display:block;";
+				document.getElementById("pause").style.cssText = "display:none;";
+				document.getElementById("music1").play();
+			}
+		</script>
+		
+		
 		<div class="sear">
 			<video width="430" height="293" autoplay="autoplay" id="sear">
 				<source src="https://colorstripes.github.io/static/img/sear.mp4" type="video/mp4"></source>

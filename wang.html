@@ -36,6 +36,41 @@
 			</ul>
 		</div>
 		
+		<div class="music">
+			<audio id="music1" autoplay="autoplay" loop="loop">
+				<source src="static/img/music1.mp3" type="audio/mp3" />
+			</audio>
+		</div>
+		
+		<div class="musp">
+			<img src="static/img/pause.png" width="100" id="pause"/>
+			<img src="static/img/play.png" width="100" id="play"/>
+		<div/>
+		
+		<script>
+			var music = document.getElementById("music1");
+			music.onpause = function(){
+				document.getElementById("pause").style.cssText = "display:block;";
+				document.getElementById("play").style.cssText = "display:none;";
+			}
+			
+			var play = document.getElementById("play");
+			play.onclick = function(){
+				document.getElementById("pause").style.cssText = "display:block;";
+				document.getElementById("play").style.cssText = "display:none;";
+				document.getElementById("music1").pause();
+			}
+			
+			var pause = document.getElementById("pause");
+			pause.onclick = function(){
+				document.getElementById("play").style.cssText = "display:block;";
+				document.getElementById("pause").style.cssText = "display:none;";
+				document.getElementById("music1").play();
+			}
+		</script>
+		
+		
+		
 		
 		<div class="about">
 			<h3>甩锅汪汪</h3>

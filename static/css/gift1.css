@@ -48,8 +48,24 @@ li{
 .nav>ul>li:hover ul{
 	display: block;
 }
+.musp{
+	cursor: pointer;
+}
+.music{
+	position: absolute;
+	right: 0;
+}
+.musp #pause{
+	display: none;
+	position: absolute;
+	right: 0;
+}
+.musp #play{
+	position: absolute;
+	right: 0;
+}
 
-/* margin: 70px 30px 0px 550px; */
+
 
 .lz{
 	position: absolute;

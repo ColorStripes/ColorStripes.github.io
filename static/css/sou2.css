@@ -71,6 +71,23 @@ li{
 .nav>ul>li:hover ul{
 	display: block;
 }
+.music{
+	position: absolute;
+	right: 0;
+}
+.musp{
+	cursor: pointer;
+}
+.musp #pause{
+	display: none;
+	position: absolute;
+	margin: -140px 0px;
+}
+.musp #play{
+	position: absolute;
+	margin: -140px 0px;
+}
+
 
 
 .catch{
